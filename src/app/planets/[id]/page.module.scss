@@ -1,0 +1,77 @@
+.detailContainer {
+    padding: 13px;
+    max-width: 480px;
+    width: 100%;
+    
+    .planetInfo {
+        background: linear-gradient(to right, #1a1a2e, #16213e);
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex
+    ;
+        flex-direction: row;
+        border: 6px solid #75fba6;
+
+        h1 {
+            color: #00ff9d;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+        }
+    }
+
+    .imageContainer {
+     max-width: 500px;
+     display: flex;
+     flex-direction: column;
+        
+        img {
+            width: 200px;
+
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            align-items: center;
+          }
+
+     
+    }
+
+    .description {
+        color: #fff;
+        display: flex
+        ;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                margin: 6px 0 6px 0;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    text-align: left;
+                    padding: 0 15px 5px 15px;
+                }
+                
+            }
+ 
+    }
+
+    @media (max-width: 768px) {
+        width: auto;
+    }
+}
+
+.errorContainer {
+    text-align: center;
+    padding: 4rem;
+    
+    h1 {
+        color: #ff4444;
+    }
+}
