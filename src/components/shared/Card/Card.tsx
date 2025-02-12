@@ -1,5 +1,6 @@
 import styles from './Card.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 
@@ -14,9 +15,7 @@ export const Card = ({ title, description, imageUrl , id }: CardProps) => {
 
     const router = useRouter();
 
-    const detailClick = () => {
-        router.push(`/planets/${id}`);
-    };
+
     return (
         <div className={styles.card}>
             <div className={styles.imageContainer}>
@@ -31,9 +30,11 @@ export const Card = ({ title, description, imageUrl , id }: CardProps) => {
             <div className={styles.content}>
                 <h2>{title}</h2>
                 <p>{description}</p>
-                <button className={styles.button} onClick={detailClick}>
+             
+                <Link  className={styles.button} href={`/planets/${id}`}>
                     Curiosidades
-                </button>
+                    </Link>
+             
             </div>
         </div>
     );

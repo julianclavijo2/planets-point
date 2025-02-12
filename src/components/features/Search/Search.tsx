@@ -1,6 +1,5 @@
 "use client";
 import styles from './Search.module.scss';
-import { useState } from 'react';
 import { usePlanetStore } from '@/store';
 
 
