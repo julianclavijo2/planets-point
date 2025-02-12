@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 interface CardProps {
     id: string;
     title: string;
-    description: String;
+    description: string;
     imageUrl: string;
 }
 

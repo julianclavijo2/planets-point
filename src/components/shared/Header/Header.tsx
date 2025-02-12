@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import styles from './Header.module.scss';
 import { Search } from "../../features/Search/Search";
 import { Filters } from "../../features/filters/Filters"; 

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "../../src/styles/global.scss";
-import { Footer } from "../components/shared/Footer/Footer";
-import { Header } from "../components/shared/Header/Header";
 
 
 /* const geistSans = Geist({

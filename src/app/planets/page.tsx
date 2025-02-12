@@ -3,8 +3,7 @@
 import { useEffect } from 'react';
 import { Card } from '../../components/shared/Card/Card';
 import styles from './Planets.module.scss';
-import { usePlanetStore } from '@/store'; 
-import { Search } from '@/components/features/Search/Search';
+import { usePlanetStore } from '@/store';
 
 export default function Planets() {
 

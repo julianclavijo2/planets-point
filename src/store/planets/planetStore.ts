@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Planet, PlanetStoreState } from './types';
+import {  PlanetStoreState } from './types';
 
 export const usePlanetStore = create<PlanetStoreState>((set, get) => ({
     planets: [],
