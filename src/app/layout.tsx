@@ -1,23 +1,8 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+
 import "../../src/styles/global.scss";
 
 
-/* const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-}); */
-
-const roboto = Roboto({
-  weight: ["400", "500", "700"],
-  subsets: ["latin"]
-
-});
 
 export const metadata: Metadata = {
   title: "planets point",
@@ -31,8 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <div>{children} </div>
+      <body>
+        <div>{children}</div>
       </body>
     </html>
   );
